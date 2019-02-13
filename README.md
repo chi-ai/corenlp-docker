@@ -5,7 +5,7 @@ corenlp-docker provides a dockerised version of the [Stanford CoreNLP Server](ht
 
 ```
 docker build -t mycorenlp .
-docker run -d -p 9000:9000 mycorenlp
+docker run -d --restart unless-stopped -p 9000:9000 mycorenlp
 ```
 
 ## Simple usage
